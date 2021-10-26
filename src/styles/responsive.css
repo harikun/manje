@@ -1,0 +1,94 @@
+@media screen and (min-width: 650px) {
+    .hero {
+        background-image: url("/images/hero-image_4-small.jpg");
+    }
+    .app-bar {
+        grid-template-columns: 1fr auto;
+        padding: 8px 32px;
+    }
+
+    .app-bar .app-bar__brand h1 {
+        font-size: 1.5em;
+    }
+
+    .app-bar .app-bar__menu {
+        display: none;
+    }
+
+    .app-bar .app-bar__navigation {
+        position: static;
+        width: 100%;
+    }
+
+    .app-bar .app-bar__navigation ul li {
+        display: inline-block;
+    }
+
+    .app-bar .app-bar__navigation ul li a {
+        display: inline-block;
+        width: 120px;
+        text-align: center;
+        margin: 0;
+        font-size: 21px;
+    }
+
+    .movies {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .movie {
+        grid-template-columns: auto 1fr;
+    }
+
+    .movie .movie__title {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .movie .movie__overview {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .app-bar .app-bar__brand h1 {
+        font-size: 2em;
+    }
+    .movie__info__category {
+        display: flex;
+        justify-content:space-around;
+        margin-top: 8px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .movies {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .hero{
+        background-image: url("/images/hero-image_4-large.jpg");
+    }
+    
+}
+
+
+@media screen and (min-width: 1200px) {
+    .movies {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .hero{
+        background-image: url("/images/hero-image_4-large.jpg");
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .movies {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .hero{
+        background-image: url("/images/hero-image_4-large.jpg");
+    }
+}
